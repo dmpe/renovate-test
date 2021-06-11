@@ -11,7 +11,7 @@
     {
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "(?<depName>(?<=repository: \{\{ \.Values\.nexus \}\}\/).+(?=.*))"
+        "(?<depName>(?<=repository: \\{\\{ \\.Values\\.nexus \\}\\}\/).+(?=.*))"
       ],
       "registryUrlTemplate": "docker.io"
     }
