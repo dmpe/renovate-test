@@ -9,7 +9,8 @@
       ],
       "matchStrings": [
         "datasource=(?<datasource>.*?) depName=(?<depName>.*?) tag=(?<currentValue>.*?)\n"
-      ]
+      ], 
+      "datasourceTemplate": "docker"
     }
   ],
   "packageRules": [
