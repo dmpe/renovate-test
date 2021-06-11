@@ -1,7 +1,11 @@
-{ 
-  "enabledManagers": ["helm-values"],
-  "kubernetes": {
-    "fileMatch": ["control_values.yaml.gotmpl"]
+{
+  "enabledManagers": [
+    "helm-values"
+  ],
+  "helm-values": {
+    "fileMatch": [
+      "control_values.yaml.gotmpl"
+    ]
   },
   "regexManagers": [
     {
