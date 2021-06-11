@@ -14,8 +14,8 @@
       ],
       "matchStringsStrategy": "recursive",
       "matchStrings": [
-        "repository: \\{\\{ \\.Values\\.nexus \\}\\}.+", 
-        "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].+)\n*tag:\\s*\"(?<currentValue>.*?)\""
+        "[^image:].+",
+        "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].*)\n"
       ],
       "datasourceTemplate": "docker"
     }
