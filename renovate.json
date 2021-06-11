@@ -12,8 +12,9 @@
       "fileMatch": [
         "control_values.yaml.gotmpl"
       ],
-      "matchStringsStrategy": "any",
+      "matchStringsStrategy": "recusive",
       "matchStrings": [
+        "[^image:\n].+",
         "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].*)\n *tag: (?<currentValue>.*)"
       ],
       "registryUrlTemplate": "https://index.docker.io",
