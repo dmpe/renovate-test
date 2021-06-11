@@ -15,7 +15,7 @@
       "matchStringsStrategy": "recusive",
       "matchStrings": [
         "[^image:\n].+",
-        "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].*)\n *tag: (?<currentValue>.*)"
+        "tag: (?<currentValue>.*)"
       ],
       "registryUrlTemplate": "https://index.docker.io",
       "datasourceTemplate": "docker"
