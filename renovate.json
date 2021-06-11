@@ -13,7 +13,7 @@
         "control_values.yaml.gotmpl"
       ],
       "matchStrings": [
-        "imageName=(?<depName>.*) *tag: (?<currentValue>.*)"
+        "renovate: (?<depName>.*) *tag: (?<currentValue>.*)"
       ],
       "datasourceTemplate": "docker"
     }
