@@ -16,6 +16,7 @@
       "matchStrings": [
         "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].*)\n *tag: (?<currentValue>.*)"
       ],
+      "registryUrlTemplate": "docker.io",
       "datasourceTemplate": "docker"
     }
   ],
