@@ -16,7 +16,6 @@
       "matchStrings": [
         "name=(?<depName>.*)\n *tag: (?<currentValue>.*)"
       ],
-      "registryUrlTemplate": "https://index.docker.io",
       "datasourceTemplate": "docker"
     }
   ],
@@ -26,7 +25,6 @@
         "docker"
       ],
       "enabled": true,
-      "registryUrls": ["https://index.docker.io"],
       "commitMessageTopic": "container image {{depName}}"
     }
   ]
