@@ -1,8 +1,8 @@
 {
   "enabledManagers": [
-    "helm-values"
+    "regex"
   ],
-  "helm-values": {
+  "regex": {
     "fileMatch": [
       "control_values.yaml.gotmpl"
     ]
