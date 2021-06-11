@@ -12,7 +12,6 @@
       "fileMatch": [
         "control_values.yaml.gotmpl"
       ],
-      "matchStringsStrategy": "any",
       "matchStrings": [
         "imageName=(?<depName>.*?)\n *tag: (?<currentValue>.*)"
       ],
