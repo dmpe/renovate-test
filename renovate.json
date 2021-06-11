@@ -14,7 +14,7 @@
       ],
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "name=(?<depName>.*)\n *tag: (?<currentValue>.*)"
+        "imageName=(?<depName>.*?)\n *tag: (?<currentValue>.*)"
       ],
       "datasourceTemplate": "docker"
     }
