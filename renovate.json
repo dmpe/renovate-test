@@ -8,7 +8,7 @@
         "control_values.yaml.gotmpl"
       ],
       "matchStrings": [
-        "datasource=(?<datasource>.*?) depName=(?<depName>.*?)"
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?) tag=(?<currentValue>.*?)\n"
       ]
     }
   ],
