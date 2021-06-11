@@ -12,7 +12,7 @@
       "fileMatch": [
         "control_values.yaml.gotmpl"
       ],
-      "matchStringsStrategy": "recursion",
+      "matchStringsStrategy": "recursive",
       "matchStrings": [
         "repository: \\{\\{ \\.Values\\.nexus \\}\\}.+", 
         "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].+)*tag:\\s*\"(?<currentValue>.*?)\""
