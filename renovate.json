@@ -9,6 +9,9 @@
   },
   "regexManagers": [
     {
+      "fileMatch": [
+        "control_values.yaml.gotmpl"
+      ],
       "matchStringsStrategy": "any",
       "matchStrings": [
         "(?<depName>(?<=repository: \\{\\{ \\.Values\\.nexus \\}\\}\/).+(?=.*))"
