@@ -14,7 +14,7 @@
       ],
       "matchStringsStrategy": "any",
       "matchStrings": [
-        "repository: (?<depName>.*)\n *tag: (?<currentValue>.*)"
+        "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].*)\n *tag: (?<currentValue>.*)"
       ],
       "datasourceTemplate": "docker"
     }
