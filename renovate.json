@@ -18,7 +18,6 @@
         "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].*)\n *tag: (?<currentValue>.*)\n"
       ],
       "datasourceTemplate": "docker",
-      "currentValueTemplate": "docker"
     }
   ]
 }
