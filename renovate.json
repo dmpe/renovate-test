@@ -15,7 +15,7 @@
       "matchStringsStrategy": "recursive",
       "matchStrings": [
         "repository: \\{\\{ \\.Values\\.nexus \\}\\}.+", 
-        "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].+)*\"(?<currentValue>.+)\""
+        "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].+)"
       ],
       "registryUrlTemplate": "docker.io",
       "datasourceTemplate": "docker"
