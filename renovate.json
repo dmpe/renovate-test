@@ -1,0 +1,15 @@
+{ 
+  "enabledManagers": ["helm-values"],
+  "kubernetes": {
+    "fileMatch": ["control_values.yaml.gotmpl"]
+  },
+  "regexManagers": [
+    {
+      "matchStringsStrategy": "any",
+      "matchStrings": [
+        "(?<depName>(?<=repository: \{\{ \.Values\.nexus \}\}\/).+(?=.*))"
+      ],
+      "registryUrlTemplate": "docker.io"
+    }
+  ]
+}
