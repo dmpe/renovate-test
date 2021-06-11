@@ -12,9 +12,8 @@
       "fileMatch": [
         "control_values.yaml.gotmpl"
       ],
-      "matchStringsStrategy": "recusive",
+      "matchStringsStrategy": "any",
       "matchStrings": [
-        "[^image:\n].+",
         "name=(?<depName>.*)\n *tag: (?<currentValue>.*)"
       ],
       "registryUrlTemplate": "https://index.docker.io",
