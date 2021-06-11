@@ -9,7 +9,7 @@
         "control_values.yaml.gotmpl"
       ],
       "matchStrings": [
-        "depName=(?<depName>.*?)\n *tag: (?<currentValue>.*?)\n"
+        "depName=(?<depName>.*?)\n\n *tag: (?<currentValue>.*?)\n"
       ], 
       "datasourceTemplate": "docker"
     }
