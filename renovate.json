@@ -17,7 +17,7 @@
         "[^image:].+",
         "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].*)\n *tag: (?<currentValue>.*)\n"
       ],
-      "datasourceTemplate": "docker",
+      "datasourceTemplate": "docker"
     }
   ]
 }
