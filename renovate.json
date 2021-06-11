@@ -2,18 +2,13 @@
   "enabledManagers": [
     "regex"
   ],
-  "regex": {
-    "fileMatch": [
-      "control_values.yaml.gotmpl"
-    ]
-  },
   "regexManagers": [
     {
       "fileMatch": [
         "control_values.yaml.gotmpl"
       ],
       "matchStrings": [
-        "depName=(?<depName>.*?) *tag: (?<currentValue>.*)"
+        "depName=(?<depName>.*?) *tag: (?<currentValue>.*)\n"
       ],
       "datasourceTemplate": "docker"
     }
