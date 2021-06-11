@@ -15,7 +15,7 @@
       "matchStringsStrategy": "recursive",
       "matchStrings": [
         "[^image:].+",
-        "repositorty: (?<depName>.*)\n *tag: (?<currentValue>.*)"
+        "repository: (?<depName>.*)\n *tag: (?<currentValue>.*)"
       ],
       "datasourceTemplate": "docker"
     }
