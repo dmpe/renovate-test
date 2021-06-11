@@ -12,9 +12,10 @@
       "fileMatch": [
         "control_values.yaml.gotmpl"
       ],
-      "matchStringsStrategy": "any",
+      "matchStringsStrategy": "recursive",
       "matchStrings": [
-        "(?<depName>(?<=repository: \\{\\{ \\.Values\\.nexus \\}\\}\/).+(?=.*))"
+        "repository: \\{\\{ \\.Values\\.nexus \\}\\}.+", 
+        "(?<depName>[^repo: \\{\\{ \\.Values\\.nexus \\}\\}\/].+)"
       ],
       "registryUrlTemplate": "docker.io"
     }
