@@ -26,6 +26,7 @@
         "docker"
       ],
       "enabled": true,
+      "registryUrls": ["https://index.docker.io"],
       "commitMessageTopic": "container image {{depName}}",
       "matchUpdateTypes": [
         "major",
