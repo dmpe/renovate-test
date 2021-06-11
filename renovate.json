@@ -8,9 +8,8 @@
         "control_values.yaml.gotmpl"
       ],
       "matchStrings": [
-        "depName=(?<depName>.*?) tag: (?<currentValue>.*?)\n"
-      ],
-      "datasourceTemplate": "docker"
+        "datasource=(?<datasource>.*?) depName=(?<depName>.*?) tag: (?<currentValue>.*?)\n"
+      ]
     }
   ],
   "packageRules": [
