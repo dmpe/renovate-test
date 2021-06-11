@@ -6,7 +6,7 @@
     "fileMatch": [
       "control_values.yaml.gotmpl"
     ]
-  }, 
+  },
   "regexManagers": [
     {
       "fileMatch": [
@@ -15,9 +15,23 @@
       "matchStringsStrategy": "recursive",
       "matchStrings": [
         "[^image:].+",
-        "repository: (?<depName>.*)\n *tag: (?<currentValue>.*)"
+        "(?<depName>[^repository: \\{\\{ \\.Values\\.nexus \\}\\}\/].*)\n *tag: (?<currentValue>.*)\n"
       ],
       "datasourceTemplate": "docker"
     }
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "enabled": true,
+      "commitMessageTopic": "container image {{depName}}",
+      "matchUpdateTypes": [
+        "major",
+        "minor",
+        "patch"
+      ],
+    },
   ]
 }
